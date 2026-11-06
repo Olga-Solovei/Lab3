@@ -1,0 +1,172 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #eef2fb;
+  color: #222;
+}
+
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  margin-top: 0;
+  color: #7B68EE;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+input, textarea, button {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+input, textarea {
+  border: 1px solid #bbb;
+  border-radius: 4px;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #7B68EE;
+  box-shadow: 0 0 0 2px #d6e2ff;
+}
+
+button {
+  margin-top: 12px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background: #7B68EE;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #7B68EE;
+}
+
+button:disabled {
+  background: #9aa9d4;
+  cursor: not-allowed;
+}
+
+.error {
+  display: block;
+  color: #d93025;
+  font-size: 14px;
+}
+
+input.invalid, textarea.invalid {
+  border: 2px solid #d93025;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  background: #f6f8ff;
+  border-left: 4px solid #c493f8;
+  border-radius: 4px;
+}
+
+li h3 {
+  margin: 0 0 4px;
+  font-size: 16px;
+}
+
+li p {
+  margin: 0;
+  color: #444;
+}
+
+.post-id {
+  display: inline-block;
+  margin-bottom: 6px;
+  padding: 2px 8px;
+  background: #7B68EE;
+  color: white;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.empty {
+  color: gray;
+  text-align: center;
+}
+
+.message {
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 6px;
+  background: #e8f0ff;
+  color: #7B68EE;
+}
+
+.message:empty {
+  display: none;
+}
+
+.message.success {
+  background: #e3f6e3;
+  color: #1e7e34;
+}
+
+.message.failure {
+  background: #fde8e8;
+  color: #d93025;
+}
+
+.hidden {
+  display: none;
+}
+
+.columns {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.column {
+  flex: 1;
+  padding: 15px;
+  border: 1px solid #d9e1f5;
+  border-top: 4px solid #7B68EE;
+  border-radius: 6px;
+}
+
+.column h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+@media (max-width: 700px) {
+  .columns {
+    flex-direction: column;
+  }
+
+  .column {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
